@@ -14,6 +14,10 @@ class BasePage {
   static get toastMessage() {
     return cy.get(".mat-simple-snack-bar-content");
   }
+  
+  static get submitButton(){
+    return cy.get("#submitButton");
+  }
 
   static visit(options) {
     options = {
